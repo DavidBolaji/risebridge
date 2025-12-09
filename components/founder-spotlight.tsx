@@ -21,9 +21,9 @@ export function FounderSpotlight() {
 
               {/* Image container */}
               <div className="relative bg-linear-to-br from-primary/20 to-accent/10 border-2 border-primary/30 rounded-3xl p-2 overflow-hidden">
-                <div className="aspect-[4/5] rounded-2xl overflow-hidden">
+                <div className="aspect-4/5 rounded-2xl overflow-hidden">
                   <Image
-                    src="/founder-damilola-gbuyiro.jpg"
+                    src="/founder.jpg"
                     alt="Damilola Gbuyiro - Founder of RiseBridge Initiative"
                     width={500}
                     height={625}
@@ -33,9 +33,9 @@ export function FounderSpotlight() {
               </div>
 
               {/* Floating badge */}
-              <div className="absolute -bottom-4 -right-4 bg-primary text-white px-6 py-3 rounded-xl shadow-lg">
+              {/* <div className="absolute -bottom-4 -right-4 bg-primary text-white px-6 py-3 rounded-xl shadow-lg">
                 <p className="text-sm font-bold">Founded Dec 12, 2025</p>
-              </div>
+              </div> */}
             </div>
           </div>
 

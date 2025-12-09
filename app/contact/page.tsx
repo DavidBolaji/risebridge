@@ -40,8 +40,8 @@ export default function Contact() {
                   icon: Mail,
                   title: "Email",
                   desc: "Reach out to us via email",
-                  contact: "contact@risebridge.org",
-                  href: "mailto:contact@risebridge.org",
+                  contact: "enquiries@risebridgeinitiative.com",
+                  href: "mailto:enquiries@risebridgeinitiative.com",
                 },
                 {
                   icon: MessageCircle,
@@ -88,7 +88,7 @@ export default function Contact() {
             <h2 className="text-4xl sm:text-5xl font-bold text-balance">Follow Us on Social</h2>
             <div className="flex flex-wrap justify-center gap-4">
               {[
-                { name: "Instagram", href: "https://instagram.com" },
+                { name: "Instagram", href: "https://www.instagram.com/risebridgeinitiative?igsh=MTJqcHNnYW9mYXp2NA%3D%3D&utm_source=qr" },
                 { name: "Facebook", href: "https://facebook.com" },
                 { name: "LinkedIn", href: "https://linkedin.com" },
                 { name: "Twitter", href: "https://twitter.com" },

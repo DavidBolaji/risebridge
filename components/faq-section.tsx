@@ -17,7 +17,7 @@ const faqs = [
   {
     question: "How can I donate to RiseBridge?",
     answer:
-      "You can donate via bank transfer to our GTBank account (RiseBridge Initiative - 0123456789). International donors can reach us at donate@risebridgeafrica.org for alternative payment options.",
+      "Click the donate button and proceed to filling the form and we will reach out to you.",
   },
   {
     question: "What skills do you teach?",

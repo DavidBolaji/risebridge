@@ -150,7 +150,7 @@ export default function HomePage() {
               <span className="text-primary font-bold text-sm uppercase tracking-widest">Our Approach</span>
               <h2 className="text-4xl sm:text-5xl font-bold mt-4 mb-4 text-balance">What We Do</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                A comprehensive 5-pillar empowerment model designed to transform lives
+                A comprehensive 5 pillar empowerment model designed to transform lives
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -165,7 +165,7 @@ export default function HomePage() {
                 {
                   icon: Sparkles,
                   title: "Vocational Skills",
-                  desc: "Community-based practical trades like tailoring, crafts, and repairs",
+                  desc: "Community based practical trades like tailoring, crafts, and repairs",
                   gradient: "from-teal-500 to-cyan-600",
                   bgGlow: "bg-teal-500/20",
                 },
@@ -179,7 +179,7 @@ export default function HomePage() {
                 {
                   icon: Target,
                   title: "Entrepreneurship Training",
-                  desc: "Business basics, financial literacy, and micro-business setup",
+                  desc: "Business basics, financial literacy, and micro business setup",
                   gradient: "from-lime-500 to-green-600",
                   bgGlow: "bg-lime-500/20",
                 },
@@ -256,7 +256,7 @@ export default function HomePage() {
                 },
                 {
                   title: "Excellence",
-                  desc: "We are committed to delivering high-quality programs that create real, measurable impact in the lives of young people.",
+                  desc: "We are committed to delivering high quality programs that create real, measurable impact in the lives of young people.",
                   icon: Sparkles,
                   color: "lime",
                 },
@@ -303,7 +303,7 @@ export default function HomePage() {
                   <p className="text-lg font-bold text-destructive uppercase tracking-wide mb-4">The Challenge</p>
                   <p className="text-lg text-muted-foreground leading-relaxed">
                     Nigeria has one of the highest youth unemployment rates in Africa. Despite a population where over
-                    60% are young people, millions lack access to market-relevant skills. The root causes are clear:
+                    60% are young people, millions lack access to market relevant skills. The root causes are clear:
                     limited digital literacy, no vocational training access, lack of mentorship, and no clear pathways
                     to opportunity.
                   </p>
@@ -316,8 +316,8 @@ export default function HomePage() {
                 <div className="pl-6 relative z-10">
                   <p className="text-lg font-bold text-primary uppercase tracking-wide mb-4">The Solution</p>
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    RiseBridge closes this gap with practical, accessible, and impact-driven programs. We equip
-                    underprivileged youth with the skills they need to secure employment, start micro-businesses, and
+                    RiseBridge closes this gap with practical, accessible, and impact driven programs. We equip
+                    underprivileged youth with the skills they need to secure employment, start micro businesses, and
                     build economic independence. This breaks poverty cycles and unlocks human potential.
                   </p>
                 </div>
@@ -354,7 +354,7 @@ export default function HomePage() {
                 {
                   year: "2028+",
                   phase: "Scale Phase",
-                  details: ["500+ learners", "Multi-state presence", "National recognition", "Sustainable model"],
+                  details: ["500+ learners", "Multi state presence", "National recognition", "Sustainable model"],
                   status: "Vision",
                   gradient: "from-green-500 to-emerald-600",
                 },
@@ -403,7 +403,7 @@ export default function HomePage() {
                 {
                   icon: GraduationCap,
                   title: "Skilled Graduates",
-                  desc: "Young people equipped with market-ready digital and vocational skills, prepared to enter the workforce with confidence.",
+                  desc: "Young people equipped with market ready digital and vocational skills, prepared to enter the workforce with confidence.",
                   stat: "50+",
                   statLabel: "Target by 2026",
                 },
@@ -416,7 +416,7 @@ export default function HomePage() {
                 },
                 {
                   icon: TrendingUp,
-                  title: "Micro-Entrepreneurs",
+                  title: "Micro Entrepreneurs",
                   desc: "Youth empowered to start their own businesses, generating income and creating opportunities for others.",
                   stat: "30%",
                   statLabel: "Business Starters",

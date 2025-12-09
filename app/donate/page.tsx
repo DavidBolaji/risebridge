@@ -150,7 +150,7 @@ export default function Donate() {
                   <div
                     className={`absolute inset-0 bg-linear-to-br ${tier.color} opacity-20 group-hover:opacity-30 transition-opacity`}
                   />
-                  <div className="absolute inset-[2px] bg-card rounded-[22px]" />
+                  <div className="absolute inset-0.5 bg-card rounded-[22px]" />
 
                   {/* Featured Badge */}
                   {tier.featured && (

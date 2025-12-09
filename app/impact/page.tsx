@@ -21,7 +21,7 @@ export default function Impact() {
     {
       icon: Users,
       title: "Youth Equipped",
-      desc: "With market-relevant skills that open doors to opportunity",
+      desc: "With market relevant skills that open doors to opportunity",
       stat: "500+",
       statLabel: "By 2028",
       color: "from-emerald-400 to-green-500",
@@ -45,7 +45,7 @@ export default function Impact() {
     {
       icon: Award,
       title: "Economic Empowerment",
-      desc: "Building self-sufficient, income-generating individuals",
+      desc: "Building self sufficient, income generating individuals",
       stat: "80%",
       statLabel: "Employment Rate",
       color: "from-amber-400 to-orange-500",
@@ -74,7 +74,7 @@ export default function Impact() {
     {
       num: 4,
       title: "Connect",
-      desc: "Link graduates to employment opportunities, internships, or micro-business support",
+      desc: "Link graduates to employment opportunities, internships, or micro business support",
       icon: Link2,
     },
     {
@@ -123,7 +123,7 @@ export default function Impact() {
               <div className="absolute top-0 left-0 w-2 h-full bg-linear-to-b from-primary to-accent rounded-full" />
               <p className="text-lg text-muted-foreground leading-relaxed pl-6">
                 Youth unemployment and underemployment keep millions in cycles of poverty. RiseBridge Initiative exists
-                to change this by providing practical, income-driven skills that unlock opportunity and enable youth to
+                to change this by providing practical, income driven skills that unlock opportunity and enable youth to
                 break free from poverty cycles.
               </p>
             </div>
@@ -219,7 +219,7 @@ export default function Impact() {
                 {
                   phase: "Phase 3: Scale",
                   year: "2028+",
-                  goals: ["500+ learners yearly", "Multi-state coverage", "National reputation", "Sustainable model"],
+                  goals: ["500+ learners yearly", "Multi state coverage", "National reputation", "Sustainable model"],
                   color: "from-teal-500 to-emerald-600",
                 },
               ].map((phase, i) => (

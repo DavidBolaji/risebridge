@@ -35,7 +35,7 @@ export default function About() {
   const approach = [
     {
       title: "Practical",
-      desc: "Hands-on, real-world skills training that prepares youth for actual market demands",
+      desc: "Hands on, real world skills training that prepares youth for actual market demands",
       icon: "🛠️",
     },
     {
@@ -44,12 +44,12 @@ export default function About() {
       icon: "🚪",
     },
     {
-      title: "Youth-Friendly",
+      title: "Youth Friendly",
       desc: "Modern, flexible learning methods designed for today's generation",
       icon: "🎯",
     },
     {
-      title: "Impact-Driven",
+      title: "Impact Driven",
       desc: "Every program measured by real outcomes and life transformation",
       icon: "📈",
     },

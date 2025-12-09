@@ -17,14 +17,14 @@ export default function Programs() {
     {
       icon: Wrench,
       title: "Vocational Skills Development",
-      desc: "Practical community-based skills like tailoring, hairmaking, crafts, repairs, and micro-trades.",
-      items: ["Tailoring", "Hairmaking", "Crafts", "Technical Repairs", "Micro-trades"],
+      desc: "Practical community based skills like tailoring, hairmaking, crafts, repairs, and micro trades.",
+      items: ["Tailoring", "Hairmaking", "Crafts", "Technical Repairs", "Micro trades"],
       color: "from-accent to-accent/60",
     },
     {
       icon: Briefcase,
       title: "Entrepreneurship Training",
-      desc: "Business basics, money management, customer service, pricing, marketing, and start-up guidance.",
+      desc: "Business basics, money management, customer service, pricing, marketing, and start up guidance.",
       items: ["Business Basics", "Financial Literacy", "Customer Service", "Marketing", "Business Setup"],
       color: "from-primary to-accent",
     },
@@ -39,7 +39,7 @@ export default function Programs() {
       icon: Heart,
       title: "Mentorship & Growth Support",
       desc: "Guidance from trained facilitators, community role models, and industry mentors.",
-      items: ["One-on-One Mentoring", "Group Guidance", "Career Counseling", "Industry Connections", "Ongoing Support"],
+      items: ["One on One Mentoring", "Group Guidance", "Career Counseling", "Industry Connections", "Ongoing Support"],
       color: "from-primary to-primary/60",
     },
   ]
