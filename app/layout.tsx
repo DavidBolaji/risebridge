@@ -2,6 +2,7 @@ import type React from "react"
 import { Oswald } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { ScrollToTop } from "@/components/scroll-to-top"
+import { Toaster } from "react-hot-toast";
 import "./globals.css"
 
 const oswald = Oswald({ subsets: ["latin"], weight: ["400", "500", "600", "700"] })
@@ -61,6 +62,7 @@ export default function RootLayout({
         <ThemeProvider>
           <ScrollToTop />
           {children}
+           <Toaster position="top-right" reverseOrder={false} />
         </ThemeProvider>
       </body>
     </html>

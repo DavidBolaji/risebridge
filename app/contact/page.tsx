@@ -3,8 +3,46 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Mail, MessageCircle, MapPin, Phone } from "lucide-react"
+import { useState } from "react";
+import toast from "react-hot-toast";
+import { Spinner } from "@/components/ui/spinner";
 
 export default function Contact() {
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const name = formData.get("name") as string;
+    const email = formData.get("email") as string;
+    const message = formData.get("message") as string;
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      const result = await res.json();
+
+      if (res.ok) {
+        toast.success("Message sent successfully!");
+        form.reset();
+      } else {
+        toast.error(result.error || "Something went wrong");
+      }
+    } catch (error) {
+      console.error(error);
+      toast.error("Failed to send message. Try again later.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <Header />
@@ -111,27 +149,34 @@ export default function Contact() {
         <section className="px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
           <div className="max-w-2xl mx-auto space-y-8">
             <h2 className="text-4xl sm:text-5xl font-bold text-center text-balance">Send us a Message</h2>
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <input
                 type="text"
+                required
+                name="name"
                 placeholder="Your Name"
                 className="w-full px-5 py-4 bg-card border-2 border-border rounded-xl focus:border-primary focus:outline-none transition-colors text-foreground placeholder:text-muted-foreground"
               />
               <input
                 type="email"
                 placeholder="Your Email"
+                required
+                name="email"
                 className="w-full px-5 py-4 bg-card border-2 border-border rounded-xl focus:border-primary focus:outline-none transition-colors text-foreground placeholder:text-muted-foreground"
               />
               <textarea
                 placeholder="Your Message"
                 rows={5}
+                name="message"
+                required
                 className="w-full px-5 py-4 bg-card border-2 border-border rounded-xl focus:border-primary focus:outline-none transition-colors resize-none text-foreground placeholder:text-muted-foreground"
               />
               <button
                 type="submit"
-                className="w-full px-8 py-4 bg-primary text-white rounded-xl font-bold hover:bg-primary/90 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl text-lg"
+                disabled={loading}
+                className="w-full cursor-pointer px-8 py-4 bg-primary text-white rounded-xl font-bold hover:bg-primary/90 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl text-lg"
               >
-                Send Message
+                {loading ? <div className="items-center justify-center flex"><Spinner /></div> : "Send Message"}
               </button>
             </form>
           </div>
