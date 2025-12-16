@@ -3,6 +3,11 @@ import Image from "next/image"
 import { Instagram, Facebook, Linkedin } from "lucide-react"
 
 export function Footer() {
+  const redirect = () => {
+    if (typeof window !== "undefined") {
+      window.open("https://forms.gle/xuBRWJzkWCiWUaZp7", "_blank", "noopener,noreferrer")
+    }
+  }
   return (
     <footer className="border-t-2 border-primary/20 bg-card">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -49,8 +54,13 @@ export function Footer() {
           <div>
             <h3 className="font-bold mb-4 uppercase text-sm tracking-widest text-primary">Support Us</h3>
             <nav className="flex flex-col gap-3">
+              <button
+                onClick={redirect}
+                className="text-left text-muted-foreground hover:text-primary transition-colors text-sm"
+              >
+                Donate
+              </button>
               {[
-                { href: "/donate", label: "Donate" },
                 { href: "/impact", label: "Impact" },
                 { href: "/contact", label: "Contact" },
               ].map((link) => (
